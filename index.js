@@ -2,6 +2,7 @@ let preBox = document.getElementById('preBox')
 let input = document.querySelector('.pre-box input').value
 let btn = document.querySelector('.pre-box button')
 let main = document.querySelector('.reveal')
+let plus = document.querySelector('.plus')
 
 
 const user = document.getElementById('user_name')
@@ -18,6 +19,14 @@ btn.addEventListener('click', () =>{
 
     // preBox.classList.add('hide')
     // main.classList.add('revealAni')
+})
+
+plus.addEventListener('click', () =>{
+    plus.style.bottom = '50%'
+    plus.style.transition = '0.3s'
+    main.style.filter = 'blur(5px)'
+
+
 })
 
 console.log(main)
