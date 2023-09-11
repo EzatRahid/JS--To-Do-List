@@ -1,5 +1,5 @@
 let preBox = document.getElementById('preBox')
-let input = document.querySelector('.pre-box input').value
+let input = document.getElementById('input')
 let btn = document.querySelector('.pre-box button')
 let main = document.querySelector('.reveal')
 let plus = document.querySelector('.plus')
@@ -8,7 +8,7 @@ let plus = document.querySelector('.plus')
 const user = document.getElementById('user_name')
 
 btn.addEventListener('click', () =>{
-    input = user.innerHTML
+    user.innerHTML = input.value
     console.log('clicked')
 
     preBox.style.transform = 'translateX(-200%)'
