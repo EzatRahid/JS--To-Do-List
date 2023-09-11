@@ -86,7 +86,11 @@ body{
 }
 
 .reveal{
-    visibility: hidden;
+    transform: translateX(200%);
+}
+
+.revealAni{
+
 }
 
 input{
@@ -95,6 +99,10 @@ input{
     outline: 0;
     border-bottom: 3px solid black;
     width: 100%;
+}
+
+.pre-box{
+    animation: load 0.7s;
 }
 
 .pre-box h2{
@@ -111,4 +119,34 @@ input{
     background-color: white;
     color: #000;
     cursor: pointer;
+}
+
+@keyframes reveal{
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes load {
+    0%{
+        transform: translateX(-100%);
+        filter: blur(10px);
+    }
+
+    100%{
+        transform: translateX(0);
+        filter: blur(0);
+    }
 }
