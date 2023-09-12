@@ -30,4 +30,10 @@ plus.addEventListener('click', () =>{
 })
 
 console.log(main)
+console.log(main)
+console.log(main)
+console.log(main)
+console.log(main)
+console.log(main)
+console.log(main)
 
