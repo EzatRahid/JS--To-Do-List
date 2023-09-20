@@ -3,7 +3,13 @@ let input = document.getElementById('input')
 let btn = document.querySelector('.pre-box button')
 let main = document.querySelector('.reveal')
 let plus = document.querySelector('.plus')
+let box = document.getElementById("box")
 
+if(box){
+    box.addEventListener('click', () =>{
+        main.style.transform = 'translate(-150%,-25%)'
+    })
+}
 
 const user = document.getElementById('user_name')
 
